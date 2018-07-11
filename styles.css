@@ -1,10 +1,18 @@
 
+
+
+
+
+
 /* center align text within a column */
-
-
-.border {
-    border: 1px solid orangered;
+a {
+    color: black;
 }
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}  
 
 .col-center {
     text-align: center;
@@ -18,26 +26,185 @@
     text-align: right;
 }
 
-/* column padding adjust for top header - search, menu, etc. */
-
-.small-padding {
-    padding: 7px 9px; 
+.css-10m9xeu {
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-align: right;
 }
-/* .no-gutters {
-    padding: 10px;
-} */
 
-.navbar {
-    margin: 10px auto;
-    width: 970px;
-    justify-content: flex-start;
+.masthead {
+    font-family: IBM Plex Serif;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
 }
+
+.masthead-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.login {
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid darkgray;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: rgb(50, 104, 145);
+    text-transform: uppercase;
+}
+
+.cta {
+    font-family: Helvetica;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(50, 104, 145);
+}
+
+
+.section-date {
+    padding: 13px 20px 10px 20px;
+    margin-bottom: 10px;
+    align-items: baseline;
+
+}
+
+.date h6 {
+    margin-bottom: 0px;
+}
+
+.divider {
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#top-divider {
+    border-top: 2px solid black;
+    margin-top: 7px;
+}
+.topstories {
+    padding: 14px 4px 16px 20px;
+}
+
+.topstories h5 {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.bottom-border {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.feature-img .col {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 6px;
+}
+
+.mobile-feature {
+    padding: 7px 20px 10px 20px;
+}
+
+.mobile-feature h1 {
+    font-size: 26px;
+    font-family: IBM Plex Serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.mobile-feature h2 {
+    font-family: IBM Plex Serif;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 11px;
+    font-family: IBM Plex Serif;
+}
+
+#genre-title {
+    font-size: 9px; 
+    color: rgb(31, 31, 31);
+    text-transform: uppercase;
+    font-family: Helvetica;
+}
+
+#minor-story{
+    font-size: 18px;
+    font-family: IBM Plex Serif;
+}
+
+.mobile-feature ul {
+    padding: 0px 20px 0px 5px;
+    list-style-position: outside;
+    margin-bottom: 10px;
+}
+
+.mobile-feature li {
+    font-size: 16px;
+    font-family: Helvetica;
+    padding-top: 3px;
+    padding-left: 0px;
+    color: #555;
+}
+
+#share {
+    margin-top: 7px;
+}
+
+.share-icon {
+    align-self: flex-end;
+}
+
+#time {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: darkgray;
+}
+
+p {
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #555;
+}
+
+.mobile-feature p {
+    font-size: 16px;
+    font-family: Helvetica;
+    padding-top: 3px;
+    margin-bottom: 10px;
+}
+
+#batman-title {
+    font-family: IBM Plex Serif;
+    font-size: 21px;
+    font-style: italic;
+}
+
+#image-margin {
+    margin-top: 10px;
+}
+
+#comic-cover {
+    margin-top: 10px;
+    max-width: 60%;
+}
+
+/* classes used after mobile first complete */
 
 .menu {
     font-family: Helvetica;
     font-weight: 700;
     font-size: 11px;
     color: black;
+    text-transform: uppercase;
 }
 
 .search {
@@ -47,50 +214,54 @@
     color: black;
 }
 
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.login-btn {
+    padding: 7px 10px 6px;
+    margin-right: 15px;
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: #6288A5;
+    border: 1px solid #4D7B9F;
+}
+
+.cta-btn {
+    padding: 7px 10px 6px;
+    font-family: Helvetica;
+    margin-right: 15px;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: #6288A5;
+    border: 1px solid #4D7B9F;
+}
+
+
+
+
 .btn-primary:hover {
     background-color: #326891;
 }
-
-.login {
-    padding: 7px 10px 6px;
-    margin-right: 15px;
-    font-family: Helvetica;
-    font-weight: 700;
-    font-size: 11px;
-    background-color: #6288A5;
-    border: 1px solid #4D7B9F;
-}
-
-.cta {
-    padding: 7px 10px 6px;
-    font-family: Helvetica;
-    margin-right: 15px;
-    font-weight: 700;
-    font-size: 11px;
-    background-color: #6288A5;
-    border: 1px solid #4D7B9F;
-}
-
-.login-cta {
-    position: absolute;
-    right: 0%;
-}
-
-/* title and masthead */
-
-.masthead {
+.right-title {
     font-family: IBM Plex Serif;
-    font-size: 80px;
-}
-.masthead-logo {
-    width: 100px;
-    height: 100px;
+    font-size: 14px;
+    font-weight: 700px;
+    color: black;
 }
 
 /* mini header - date weather stocks*/
 
 .nav {
-    margin-bottom: 5px;
+    margin-top: 5px;
     padding-top: none;
     padding-bottom: none;
 }
@@ -107,12 +278,6 @@
     text-decoration: underline;
 }
 
-.divider {
-    width: 970px;
-    border: 1px solid black;
-    margin: auto;
-}
-
 .mini-header ul {
     text-align: center;
     padding: 0;
@@ -120,7 +285,7 @@
 }
 
 .mini-header {
-    width: 970px;
+    width: 100%;
     border-bottom: 1px solid lightgray; 
     margin: auto;
 }
@@ -144,6 +309,62 @@
 }
 
 
+
+@media screen and (min-width: 768px) { 
+    .container {
+        max-width: 960px;
+    }
+
+    .big-picture {
+        padding: 0px 15px;
+    }
+
+    .mobile-feature p {
+        font-size: 11px;
+        font-family: Helvetica;
+        padding-top: 3px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-feature li {
+        font-size: 11px;
+        font-family: Helvetica;
+        padding-top: 3px;
+        padding-left: 0px;
+        color: #555;
+    }
+
+    .mobile-feature h1 {
+        font-size: 14px;
+        font-family: IBM Plex Serif;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .mobile-feature h2 {
+        font-family: IBM Plex Serif;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+
+    #minor-story{
+        font-size: 14px;
+        font-family: IBM Plex Serif;
+    }
+
+    .bottom-border {
+        border-bottom: none;
+    }
+
+    #batman-title {
+        font-family: IBM Plex Serif;
+        font-size: 28px;
+        font-style: italic;
+    }
+}
+
+
 /* features container styles */
 .card {
     padding: 0px;
@@ -152,7 +373,10 @@
 }
 
 .card-body {
-    padding: 10px 0px 5px 0px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
     border-radius: 0px;
 }
 
@@ -161,16 +385,23 @@
     margin-bottom: 5px;
 }
 
+.card-title:hover {
+    text-decoration: underline; 
+}
+
 #superman-title {
     text-align: center; 
     font-size: 30px; 
     font-weight: normal;
 }
-.card-subtitle {
-    font-size: 10px;    
+.card-subtitle {  
     padding-top: 2px;
     margin-top: 1px;
     margin-bottom: 2px;
+    font-size: 11px;
+    font-family: Helvetica;
+    text-transform: uppercase;
+  
 }
 
 .card-img-top {
@@ -180,26 +411,6 @@
 
 .figure {
     padding-top: 15px;
-}
-
-h5 {
-    font-family: IBM Plex Serif;
-    margin-bottom: 5px;
-}
-
-h5:hover {
-    text-decoration: underline;
-}
-
-h6 {
-    font-size: 11px;
-    font-family: Helvetica;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 12px;
-    font-family: Helvetica;
 }
 
 /* article text */
@@ -212,209 +423,7 @@ p {
 
 /* links */
 
-a {
-    color: black;
-}
-
-a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-/* for small title of rightmost columns, before split */
-
-.this-that {
-    font-family: IBM Plex Serif;
-    font-size: 12px;
-    /* font-weight: 700px; */
-    color: black
-}
-
-/* for titles of rightmost column, split column */
-
-.right-title {
-    font-family: IBM Plex Serif;
-    font-size: 14px;
-    font-weight: 700px;
-    color: black;
-}
-
-#batman-title {
-    font-family: IBM Plex Serif;
-    font-size: 28px;
-    font-style: italic;
-}
-
-/* img specs for spiderman */
-
-/* .spider-image {
-    height: 225px;
-} */
-
-/* img specs for apes */
-
-/* .apes-image {
-    height: 200px;
-} */
-
-#genre-title {
-    font-size: 9px; 
-    color: rgb(31, 31, 31);
-}
-/* 
-.img-responsive {
-    margin: auto;
-} */
-
-/* media queries */
-
-@media screen and (max-width: 992px) {
-    
-    .container {
-        max-width: 960px;
-    }
-    
-    #superman-title {
-        text-align: center; 
-        font-size: 20px; 
-        font-weight: normal;
-    }
-
-    #batman-title {
-        font-size: 20px;
-    }
-    .masthead {
-        font-size: 58px;
-    }
-
-    .masthead-logo {
-        height: 70px;
-        width: 70px;
-    }
-
-    .mini-header {
-        display: none;
-    }
-    .right-title {
-        font-size: 12px;
-    }
-
-    .card-subtitle {
-        font-size: 9px;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 760px;
-    }
-    
-    .search {
-        display: none;
-    }
-
-    .cta {
-        display: none;
-    }
-
-    .login {
-        display: none;
-    }
-
-    .settings {
-        display: none;
-    }
-
-    .wwoman {
-        display: none;
-    }
-
-    .lex-image {
-        display: none;  
-    }
-
-    .lex-card h5 {
-        font-size: 20px; 
-    }
-
-    .card-img-top {
-       max-width: 760px;
-    }
 
 
-    .card-text {
-        font-size: 13px;
-    }
-
-    #batman-title {
-        font-style: normal;
-    }
-     
-    .menu {
-        margin-left: 20px;
-    }
-@media screen and (max-width: 678px) {}
-    .container {
-        max-width: 760px;
-    }
-}
 
 
-@media screen and (max-width: 576px) {
-
-    .container {
-        max-width: 576px;
-    }
-
-    .lex-card h5 {
-        font-size: 20px; 
-    }
-    
-#superman-title {
-        text-align: center; 
-        font-size: 28px; 
-        font-weight: normal;
-    }
-
-#batman-title {
-        font-size: 20px;
-        font-style: normal;
-    }
-.apes-image {
-    max-width: 100px;
-}
-
-.right-title {
-    font-size: 20px;
-}
-
-.card-img-top {
-    width: 100%;
- }
-}
-
-@media screen and (max-width: 500px) {
-    .container {
-        max-width: 500px;
-        }
-
-    #superman-title {
-        text-align: left; 
-        font-size: 20px; 
-        font-weight: normal;
-    }
-
-    .apes-image {
-        max-width: 100px;
-    }   
-    
-    .right-title {
-        font-size: 20px;
-    }
-    
-    .card-img-top {
-        max-width: 550px;
-     }
-
-}
