@@ -1,30 +1,54 @@
 
+/* center align text within a column */
+
+
+.border {
+    border: 1px solid orangered;
+}
+
+.col-center {
+    text-align: center;
+}
+
+.col-left {
+    text-align: left;
+}
+
+.col-right {
+    text-align: right;
+}
+
+/* column padding adjust for top header - search, menu, etc. */
+
+.small-padding {
+    padding: 7px 9px; 
+}
+/* .no-gutters {
+    padding: 10px;
+} */
+
 .navbar {
     margin: 10px auto;
     width: 970px;
     justify-content: flex-start;
 }
 
-
 .menu {
     font-family: Helvetica;
     font-weight: 700;
     font-size: 11px;
+    color: black;
 }
 
 .search {
     font-family: Helvetica;
     font-weight: 700;
     font-size: 11px;
-    margin-left: 15px;
+    color: black;
 }
 
 .btn-primary:hover {
     background-color: #326891;
-}
-.login-cta {
-    position: absolute;
-    right: 0%;
 }
 
 .login {
@@ -39,26 +63,31 @@
 
 .cta {
     padding: 7px 10px 6px;
-    margin-right: 15px;
     font-family: Helvetica;
+    margin-right: 15px;
     font-weight: 700;
     font-size: 11px;
     background-color: #6288A5;
     border: 1px solid #4D7B9F;
 }
 
-.masthead-container {
-    text-align: center;
+.login-cta {
+    position: absolute;
+    right: 0%;
 }
+
+/* title and masthead */
 
 .masthead {
     font-family: IBM Plex Serif;
-    font-size: 70px;
+    font-size: 80px;
 }
 .masthead-logo {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
 }
+
+/* mini header - date weather stocks*/
 
 .nav {
     margin-bottom: 5px;
@@ -114,46 +143,74 @@
     text-decoration: none;
 }
 
-.spacer {
-    width: 970px;
-    height: 100px;
-    border-bottom: 1px solid lightgray;
-    margin: auto;
-}
 
-.features-container {
-    display: flex;
-    align-items: flex-start;
-    width: 970px;
-    margin: auto;
-    }
-
+/* features container styles */
 .card {
+    padding: 0px;
     border: none;
     border-radius: 0px;
 }
 
-.card h5 {
-    font-size: 32px;
-    font-family: IBM Plex Serif;
-  
+.card-body {
+    padding: 10px 0px 5px 0px;
+    border-radius: 0px;
 }
 
-.card h5:hover {
+.card-title {
+    font-family: IBM Plex Serif;
+    margin-bottom: 5px;
+}
+
+#superman-title {
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: normal;
+}
+.card-subtitle {
+    font-size: 10px;    
+    padding-top: 2px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.card-img-top {
+   padding-bottom: 10px;
+   border-radius: 0px;
+}
+
+.figure {
+    padding-top: 15px;
+}
+
+h5 {
+    font-family: IBM Plex Serif;
+    margin-bottom: 5px;
+}
+
+h5:hover {
     text-decoration: underline;
 }
 
-.card h6 {
+h6 {
     font-size: 11px;
     font-family: Helvetica;
     text-transform: uppercase;
 }
 
-.card p {
+p {
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+/* article text */
+
+.card-text {
     font-size: 11px;
     font-family: Helvetica;
     color: black;
 }
+
+/* links */
 
 a {
     color: black;
@@ -164,35 +221,200 @@ a:hover {
     text-decoration: underline;
 }
 
-.opinion {
-    display: flex;
-    align-items: flex-start; 
-    flex-wrap: wrap;
+/* for small title of rightmost columns, before split */
+
+.this-that {
+    font-family: IBM Plex Serif;
+    font-size: 12px;
+    /* font-weight: 700px; */
+    color: black
 }
 
-.opinion-title {
+/* for titles of rightmost column, split column */
+
+.right-title {
     font-family: IBM Plex Serif;
     font-size: 14px;
     font-weight: 700px;
     color: black;
 }
 
-.opinion h5 {
-    font-size: 14px;
-    font-weight: 700px;
+#batman-title {
     font-family: IBM Plex Serif;
+    font-size: 28px;
+    font-style: italic;
 }
 
-.opinion li {
-    font-size: 10px;
-    font-family: IBM Plex Serif;
-}
+/* img specs for spiderman */
 
-.spider-image {
+/* .spider-image {
     height: 225px;
-}
+} */
 
-.apes-image {
+/* img specs for apes */
+
+/* .apes-image {
     height: 200px;
+} */
+
+#genre-title {
+    font-size: 9px; 
+    color: rgb(31, 31, 31);
+}
+/* 
+.img-responsive {
+    margin: auto;
+} */
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+    
+    .container {
+        max-width: 960px;
+    }
+    
+    #superman-title {
+        text-align: center; 
+        font-size: 20px; 
+        font-weight: normal;
+    }
+
+    #batman-title {
+        font-size: 20px;
+    }
+    .masthead {
+        font-size: 58px;
+    }
+
+    .masthead-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .mini-header {
+        display: none;
+    }
+    .right-title {
+        font-size: 12px;
+    }
+
+    .card-subtitle {
+        font-size: 9px;
+    }
+
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+    
+    .search {
+        display: none;
+    }
+
+    .cta {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .settings {
+        display: none;
+    }
+
+    .wwoman {
+        display: none;
+    }
+
+    .lex-image {
+        display: none;  
+    }
+
+    .lex-card h5 {
+        font-size: 20px; 
+    }
+
+    .card-img-top {
+       max-width: 760px;
+    }
+
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    #batman-title {
+        font-style: normal;
+    }
+     
+    .menu {
+        margin-left: 20px;
+    }
+@media screen and (max-width: 678px) {}
+    .container {
+        max-width: 760px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        max-width: 576px;
+    }
+
+    .lex-card h5 {
+        font-size: 20px; 
+    }
+    
+#superman-title {
+        text-align: center; 
+        font-size: 28px; 
+        font-weight: normal;
+    }
+
+#batman-title {
+        font-size: 20px;
+        font-style: normal;
+    }
+.apes-image {
+    max-width: 100px;
+}
+
+.right-title {
+    font-size: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+ }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 500px;
+        }
+
+    #superman-title {
+        text-align: left; 
+        font-size: 20px; 
+        font-weight: normal;
+    }
+
+    .apes-image {
+        max-width: 100px;
+    }   
+    
+    .right-title {
+        font-size: 20px;
+    }
+    
+    .card-img-top {
+        max-width: 550px;
+     }
+
+}
