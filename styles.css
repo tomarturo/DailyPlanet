@@ -245,9 +245,6 @@ p {
     border: 1px solid #4D7B9F;
 }
 
-
-
-
 .btn-primary:hover {
     background-color: #326891;
 }
@@ -257,6 +254,10 @@ p {
     font-weight: 700px;
     color: black;
 }
+
+/* .lex-img {
+    max-width: 200px;
+} */
 
 /* mini header - date weather stocks*/
 
