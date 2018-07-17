@@ -71,7 +71,7 @@ a:hover {
 .divider {
     border: 1px solid black;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 3px;
     width: 100%;
 }
 
@@ -248,6 +248,13 @@ p {
 
 .right-title {
     font-family: IBM Plex Serif;
+    font-size: 16px;
+    font-weight: 700px;
+    color: black;
+}
+
+.right-title-medium {
+    font-family: IBM Plex Serif;
     font-size: 14px;
     font-weight: 700px;
     color: black;
@@ -364,7 +371,6 @@ p {
     }
 }
 
-
 /* features container styles */
 .card {
     padding: 0px;
@@ -422,27 +428,31 @@ p {
 }
 
 .small-thumb {
-    width: 80px;
+    width: 75px;
     height: 75px;
     margin-left: 8px;
     margin-bottom: 10px
 }
 
 .smaller-thumb {
-    width: 55px;
+    width: 50px;
     height: 50px;
     padding-left: 5px;
 }
 
 .footer {
     margin: auto;
-    padding-top: 10px;
-    max-width: 768px;
+    padding-top: 15px;
+    max-width: 960px;
 }
 
 .footer h3 {
-    font-size: 14px;
+    font-size: 13px;
     font-family: Helvetica;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
 }   
 
 .footer-tag {
@@ -452,12 +462,44 @@ p {
 }
 
 .footer-divider {
-    border: 1px solid lightgray;
+    border: .5px solid lightgray;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 25px;
     width: 100%;
 }
 
 .right-divider {
     border-right: 1px lightgray solid;
+}
+
+.sub-footer {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.sub-footer-left-border {
+    border-left: .5px solid lightgray;
+}
+
+#sub-footer {
+    font-size: 9px;
+    color: gray;
+    font-family: Helvetica;
+}
+
+.footer-contents {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+.footer-contents li {
+    font-family: Helvetica;
+    font-size: 13px;
+    color: darkgray;
+    text-align: left;
+    padding-bottom: 3px;
 }

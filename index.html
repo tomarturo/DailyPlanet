@@ -44,8 +44,8 @@
 
 <!-- menu, masthead, login buddy -->
     <section class="container">
-        <div class="row sticky-top" style="background-color: white;">
-            <div class="col align-self-center d-md-none">  
+        <div class="row sticky-top d-md-none" style="background-color: white;">
+            <div class="col-1 align-self-center">  
                 <a href="">
                 <img src="images/burgerbar.png" width="20" height="20" class="d-inline-block align-top" style="text-align: left"
                 alt=></a>   
@@ -55,10 +55,17 @@
                 <img src="images/masthead600px.png" alt="" class="img-fluid">
                 </a>
             </div>
-            <div class="col align-self-center d-md-none">
+            <div class="col-1 col-right align-self-center">
                 <svg class="css-10m9xeu" viewBox="0 0 16 16" fill="#333"><path d="M8,10c-2.5,0-7,1.1-7,3.5V16h14v-2.5C15,11.1,10.5,10,8,10z"></path><circle cx="8" cy="4" r="4"></circle></svg>
             </div>
-        </div>  
+        </div>
+        <div class="row d-none d-md-block">
+            <div class="col-8 masthead align-self-center">  
+                <a href="http://">
+                <img src="images/masthead600px.png" alt="" class="img-fluid" style="max-width: 70%">
+                </a>
+            </div>
+        </div>
         <div class="d-none d-md-block">
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link active" href="#">Friday June 22, 2018</a></li>
@@ -115,20 +122,16 @@
             <a href="" class="login">Login</a>
         </div>
     </div>
-
 <!-- Top Stories  -->
     <div class="row d-md-none" id="top-divider">
         <div class="col topstories">
             <h5>Top Stories</h5>
         </div>
     </div>
-
 <!-- larger column structure for responsive arrangement -->
     <div class="row big-picture">
         <div class="col-12 col-md-6 col-lg-5 order-md-2">
-
-<!-- Superman -->
-<!-- Mobile -->
+<!-- Superman, mobile -->
     <div class="row feature-img d-md-none">
         <div class="col">
             <img src="images/superman.jpg" class="img-fluid" alt="">
@@ -151,7 +154,7 @@
             </div>
         </div>  
     </div>
-<!-- ipad and up -->
+<!--Superman, ipad and up -->
     <div class="row bottom-border d-none d-md-block">
         <div class="card">
             <div class="card-body">
@@ -262,7 +265,7 @@
                 <h5 class="card-title" style="text-align: left; font-size: 20px; font-weight: normal;">Wonder Woman to Superman, "X-Ray Vision is Not Consensual"</h5>
                 <h6 class="card-subtitle mb-2 text-muted" style="text-align: left">Per Petersburg</h6>
                 <p class="card-text" style="text-align:left">      
-                Ancient alien machu picchu nasa pyramids targeted mutation earth mound , king soloman portal flying vessels space brothers nazca lines. Ancient alien machu picchu nasa pyramids targeted mutation earth mound , king soloman portal flying vessels space brothers nazca lines.
+                Ancient alien machu picchu nasa pyramids targeted mutation earth mound , king soloman portal flying vessels space brothers nazca lines. 
                 </p>
             </div>
         </div>
@@ -369,7 +372,7 @@
                     </div>
                 </div>           
         </div>
-<!-- ipad and up -->
+<!--Flash ipad and up -->
         <div class="row d-none d-md-block">
             <div class="card">
                     <div class="card-body">
@@ -387,7 +390,7 @@
                 <div class="card-body">
                     <h6 id="genre-title">Rumor</h6>
                     <a href=""><img src="images/kavalier.jpg" alt="" class="small-thumb float-right d-none d-md-block d-lg-none"></a>
-                    <h5 class="right-title"><a href="">Will The Escapist Return In Kavalier and Clay Sequel?</a></h5>
+                    <h5 class="right-title-medium"><a href="">Will The Escapist Return In Kavalier and Clay Sequel?</a></h5>
                 </div>  
             </div>
         </div>
@@ -397,14 +400,14 @@
                 <div class="card-body">
                     <h6 id="genre-title">Crime</h6>
                     <a href=""><img src="images/bizarro.jpg" alt="" class="small-thumb float-right"></a>
-                    <h5 class="right-title"><a href="">Bizarro Claims Responsibility For Chaos At Metropolis Zoo</a></h5>
+                    <h5 class="right-title-medium"><a href="">Bizarro Claims Responsibility For Chaos At Metropolis Zoo</a></h5>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h6 id="genre-title">Science</h6>
                     <a href=""><img src="images/starlabs.jpg" alt="" class="small-thumb float-right"></a>
-                    <h5 class="right-title"><a href="">Star Labs Investigation Drags On</a></h5>
+                    <h5 class="right-title-medium"><a href="">Star Labs Investigation Drags On</a></h5>
                 </div>
             </div>
         </div>
@@ -477,32 +480,94 @@
     </section> 
 <!-- footer -->
 <footer class="container justify-content-center d-none d-md-block">
-    <div class="row align-items-center footer">
-        <div class="col">
-            <img src="images/daily_planet.png" alt="" style="max-width: 85px">
+    <div class="row footer">
+        <div class="col col-left">
+            <img src="images/daily_planet.png" alt="" style="max-width: 100px">
         </div>
-        <div class="col right-divider col-center">
-            <a href=""><h3>News</h3></a>
+        <div class="col right-divider col-left">
+            <h3>News</h3>
+            <ul class="footer-contents col-left">
+                <li><a href="">World</a></li>
+                <li><a href="">Metropolis</a></li>
+                <li><a href="">Politics</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Obituaries</a></li>
+                <li><a href="">Corretions</a></li>
+            </ul>
         </div>
-        <div class="col right-divider col-center">
-            <a href="">
-            <h3>Opinion</h3></a>
+        <div class="col right-divider col-left">
+                <h3>Opinion</h3>
+                <ul class="footer-contents col-left">
+                    <li><a href="">Today's Opinion</a></li>
+                    <li><a href="">Op-Ed Columnists</a></li>
+                    <li><a href="">Editorials</a></li>
+                    <li><a href="">Letters</a></li>
+                    <li><a href="">Sunday Review</a></li>
+                </ul>
         </div>
-        <div class="col right-divider col-center">
-            <a href="">
-            <h3>Arts</h3></a>
+        <div class="col right-divider col-left">
+                <h3>Arts</h3>
+                <ul class="footer-contents col-left">
+                    <li><a href="">Art & Design</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="">Dance</a></li>
+                    <li><a href="">Movies</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Theatre</a></li>
+                </ul>
         </div>
-        <div class="col right-divider col-center">
-            <a href="">
-            <h3>Living</h3></a>
+        <div class="col right-divider col-left">
+                <h3>Listings</h3>
+                <ul class="footer-contents col-left">
+                    <li><a href="">Classifieds</a></li>
+                    <li><a href="">Tools & Services</a></li>
+                    <li><a href="">Photography</a></li>
+                    <li><a href="">Daily Planet History</a></li>
+                </ul>
         </div>
-        <div class="col right-divider col-center">
-            <a href="">
-            <h3>Listings</h3></a>
+        <div class="col col-left">
+                <h3>Subscriptions</h3>
+                <ul class="footer-contents col-left">
+                    <li><a href="">Home Delivery</a></li>
+                    <li><a href="">Digital Accounts</a></li>
+                    <li><a href="">Crossword</a></li>
+                </ul>
         </div>
-        <div class="col col-center">
-            <a href="">
-            <h3>Subscriptions</h3></a>
+    </div>
+<!-- sub-footer -->
+    <div class="row justify-content-center align-content-center sub-footer">
+        <div class="col-auto col-left">
+            <h5 id="sub-footer">The Daily Planet, 2018</h5>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border">
+            <a href=""><h5 id="sub-footer">Contact Us</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border">
+            <a href=""><h5 id="sub-footer">Work With Us</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border d-none d-lg-block">
+            <a href=""><h5 id="sub-footer">Advertise</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border d-none d-lg-block">
+            <a href=""><h5 id="sub-footer">Your Ad Choices</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border">
+            <a href=""><h5 id="sub-footer">Privacy</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border">
+            <a href=""><h5 id="sub-footer">Terms of Service</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border d-none d-lg-block">
+            <a href=""><h5 id="sub-footer">Terms of Sale</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border">
+            <a href=""><h5 id="sub-footer">Site Map</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border d-none d-lg-block">
+            <a href=""><h5 id="sub-footer">Site Feedback</h5></a>
+        </div>
+        <div class="col-auto col-left sub-footer-left-border">
+            <a href=""><h5 id="sub-footer">Subscriptions</h5></a>
         </div>
     </div>
 </footer>
